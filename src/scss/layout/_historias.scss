@@ -1,0 +1,115 @@
+
+.historias{
+    margin-bottom: 3rem;
+   .contenedor{
+    h3{
+        font-weight: $bold;
+        color: $grisOscuro;
+    }
+   }
+} 
+.historias_cont{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    // display: grid;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    // grid-template-columns: repeat(3, 35%);
+    .seccion{
+        background: #d7fbfb;
+    }
+}
+.historias_cont2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    // display: grid;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    // grid-template-columns: repeat(3, 35%);
+    .seccion{
+        background: $blanco;
+        border: 1px solid gray;
+        padding: 2rem;
+    }
+}
+.seccion{
+    
+    box-shadow: 5px 6px 0 -1px #34b5bc;
+    -webkit-box-shadow: 5px 6px 0 -1px #34b5bc;
+    -moz-box-shadow: 5px 6px 0 -1px #34b5bc;
+    border-radius: 2rem;
+    .seccion2_color{
+        // background-color: #f2f2f2;
+        // padding: 1rem;
+        padding: 1rem;
+    }
+    .seccion_texto, 
+    .seccion_titulo{
+        text-align: center;
+        width: 100%;
+    }
+    .seccion_texto p{
+        color: $griss;
+    }
+    .seccion_titulo{
+        color: #2d2d2d;
+       
+    }
+    .seccion_autor{
+        color: $grisOscuro;
+    }
+    .seccion_fecha{
+        color: $turquesa;
+    }
+    p,h4,h5{
+        word-wrap: break-word;
+    }
+    .seccion_boton{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0rem;
+        a{
+            color: #fff;
+            padding: .6rem 1.3rem;
+            background-color: #34b5bc;
+            border-radius: 4rem;
+            font-weight: 700;
+            &:hover{
+                background-color: #0e9bb3;
+                transition: .5s ease;
+            }
+        }
+    } 
+}
+.enviar_historia{
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    p{
+        font-weight: $regular;
+    }
+    a{
+        font-weight: $bold;
+        color: $blanco;
+        padding: .6rem 1rem;
+        border-radius: 4rem;
+        background-color: #44b2be;
+        &:hover{
+            background-color: $azulrey;
+            transition: .5s ease;
+        }
+    }
+}
+.seccion_hist_uni{
+    h1{
+        font-weight: 400;
+    }
+}
+.hist{
+    h1{
+        margin: 2rem;
+        font-weight: 700;
+    }
+}

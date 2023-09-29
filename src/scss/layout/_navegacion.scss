@@ -1,0 +1,89 @@
+.cont_menu{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    gap: 3rem;
+}
+
+.menu{
+    @include grid(2, 1rem);
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: repeat(4,9rem);
+    a{
+        display: flex;
+        align-items: center;
+        padding: 1.4rem;
+        color: $negro;
+        font-size: 2.4rem;
+        background-color: $azulclaro;
+        border-left: 3px solid $azulrey; 
+        border-radius: .4rem;
+        &:hover{
+            box-shadow: 1px 3px 7px 6px rgba(224,220,220,0.61);
+            -webkit-box-shadow: 1px 3px 7px 6px rgba(224,220,220,0.61);
+            -moz-box-shadow: 1px 3px 7px 6px rgba(224,220,220,0.61);
+            border-left-color: $azulintermedio;
+         }
+    }
+}
+
+.texto_menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .imagen_menu{
+        max-width: 25rem;
+    }
+    .texto_titulo h3{
+        background-color: $azulrey;
+        padding: 1rem;
+        border-radius: .5rem;
+        color: $blanco;
+        font-weight: 400;
+    }
+    .texto_menu-p p{
+        font-size: 1.8rem;
+    }
+    .texto_enlace{
+        display: flex;
+        justify-content: right;
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .texto_enlace a{
+        color: $blanco;
+        padding: 1rem;
+        background-color: $azulrey;
+        border-radius: .4rem;
+    }
+}
+.seccion_menu{
+    margin-top: 5rem;
+}
+
+// menu2
+.menu2{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    a{
+        color: $griss;
+        font-size: 1.8rem;
+        padding: 1.5rem 1rem;
+        border-bottom: .1rem rgb(170, 170, 170) dashed;
+        // border-bottom: .1rem rgb(170, 170, 170) dashed;
+        &:hover{
+            border-left: .2rem $azulrey solid;
+            background-color: $gris;
+        }
+    }
+}
+.grid_cont3{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.active{
+    border-left: .2rem $azulrey solid;
+    background-color: $gris;
+}

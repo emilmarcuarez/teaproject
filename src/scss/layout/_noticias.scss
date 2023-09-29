@@ -1,0 +1,78 @@
+.secc_noticias{
+    h1{
+        font-weight: $bold;
+        margin-bottom: 2rem;
+    }
+}
+@include tablet {
+    // .contenedor-anuncios {
+    //     @include grid(3, 2rem);
+    // }
+    .contenedor-noticias{
+        // cursor: pointer;
+        display: grid;
+        margin-bottom: 3rem;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        // @include grid(3, 2rem);
+        gap: 1rem;
+        p{
+            word-wrap: break-word;
+        }
+        a{
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+   
+.divi{
+display: flex;
+flex-direction: column;
+
+}
+.noticias_div {
+    // background-color: lighten($gris, 5);
+    border: 1px solid darken($gris, 10);
+    // margin-bottom: 2rem;
+    flex: 1 1 auto;
+    .contenido-anuncios {
+        padding: 1rem;
+        h3{
+            font-weight: $bold;
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 1.8rem;
+        }
+    }
+
+    h3, p {
+        margin: 0;
+        word-wrap: break-word;
+    }
+ 
+}
+
+small.card-footer{
+    display: flex;
+    background-color: lighten($gris, 5);
+justify-content: center;
+align-items: center;
+width: 100%;
+padding: 1rem;
+border-left:  1px solid darken($gris, 10);
+border-right:  1px solid darken($gris, 10);
+border-bottom:  1px solid darken($gris, 10);
+
+}
+.resumen-propiedad{
+    margin-bottom: 3rem;
+    h5, p {
+        margin: 0;
+        word-wrap: break-word;
+    }
+}

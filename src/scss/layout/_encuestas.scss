@@ -1,0 +1,71 @@
+
+// pagina de encuestas como tal
+.seccion_encuesta_pag{
+    h1{
+        font-weight: $bold;
+        margin: 3rem;
+    }
+    p{
+        margin-bottom: 3rem;
+        a{
+            margin: 2rem;
+            color: $blanco;
+            background-color: $turquesa;
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+        }
+    }
+    .graficos{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        margin: 2rem;
+        .grafico_cont{
+            display: grid;
+            grid-template-columns: 30% 70%;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+            background-color: $azulclaro;
+            padding: 2rem;
+            border-radius: 3rem;
+            h5{
+                font-size: 1.6rem;
+                text-align: center;
+            }
+            img{
+                border-radius: 3rem;
+            }
+        }
+    }
+    span{
+        color: $azulrey;
+    }
+}
+
+// ESTO PARA EL INDEX
+.seccion-encuest{
+    background-image: url(../img/5.png);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    a{
+        display: inline-block;
+        margin-right: 30rem;
+        margin-bottom: 6rem;
+        padding: 1rem;
+        background-color: $turquesa2;
+        color: white;
+        font-weight: $regular;
+        border-radius: .4rem;
+
+        &:hover{
+            background-color: $azulintermedio;
+        }
+    }
+}

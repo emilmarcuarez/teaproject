@@ -1,0 +1,43 @@
+.nosotros-contacto{
+    margin-top: 3rem;
+
+    h4{
+        margin-bottom: 2rem;
+        a{
+            margin: 3rem;
+            font-size: 2rem;
+        }
+    }
+    a{
+        text-align: center;
+        padding: 1rem 2rem;
+        background-color: $turquesa;
+       border-radius: 3rem;
+       color: $blanco;
+       font-weight: $bold;
+       margin-bottom: 3rem;
+    }
+}
+.numeros {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    ul{
+        display: flex;
+        gap: 2rem;
+       
+        
+        li{
+            padding: 1rem 2rem;
+            list-style: none;
+            background-color: rgb(243, 241, 241);
+            border-radius: 4rem;
+        }
+    }
+  }
+
+  .nosotros_cont{
+    h1{
+        font-weight: $bold;
+        margin: 2rem;
+    }
+  }

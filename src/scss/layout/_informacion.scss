@@ -1,0 +1,29 @@
+.sintomas{
+    display: grid;
+gap: 2rem;
+grid-template-columns: repeat(2,50%);
+margin-bottom: 2rem;
+}
+.sec_sintomas{
+    display: grid;
+grid-template-columns: repeat(2,50%);
+gap: 1rem;
+border-radius: .5rem;
+justify-content: center;
+align-items: center;
+background-color: rgb(238, 238, 238);
+padding: 1rem;
+    p{
+        text-align: center;
+    }
+}
+.informacion-tea{
+    margin-bottom: 3rem;
+    h2{
+        text-align: left;
+        font-weight: $bold;
+    }
+    .imagen_info{
+        margin-top: 2rem;
+    }
+}

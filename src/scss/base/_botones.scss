@@ -1,0 +1,52 @@
+.boton-amarillo {
+    @include boton($amarillo, inline-block);
+}
+.botones_index{
+    display: flex;
+flex-direction: column;
+gap: 3rem;
+margin: 5rem 0rem;
+a{
+    display: inline-block;
+    color: white;
+font-size: 3rem;
+padding: 2rem;
+background: #005C97;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+font-weight: 700;
+border-radius: 6rem;
+text-align: center;
+}
+}
+.boton-amarillo-block {
+    @include boton($amarillo, block);
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.boton-verde {
+    @include boton($verde, inline-block);
+    margin: 9px 0rem;
+    margin-bottom: 2rem;
+    border-radius: 5rem;
+}
+.boton-azul {
+    @include boton($azulrey, inline-block);
+    // margin: 9px;
+    margin-top: 2rem;
+    border-radius: 5rem;
+}
+
+.boton-rojo-block{
+    @include boton($rojo, block);
+    width: 100%;
+    margin: 1rem 0;
+}
+.boton-verde-block{
+    @include boton($verde, block);
+    width: 100%;
+    margin: 1rem 0;
+}

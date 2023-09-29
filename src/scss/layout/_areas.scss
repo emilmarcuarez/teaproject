@@ -1,0 +1,53 @@
+.areas_flex{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    row-gap: 4rem;
+    margin-bottom: 3rem;
+}
+.card_area{
+    display: flex;
+    flex-direction: column;
+}
+.card_text{
+    flex: 1 1 auto;
+    margin-bottom: 2rem;
+    .imagen_area{
+        img{
+            border-radius: 5rem;
+        }
+        
+    }
+    .titulo,
+    .descripcion_area{
+        text-align: center;
+    }
+}
+.link_area{
+        display: flex;
+        justify-content: center;
+    a{
+        color: $blanco;
+        background-color: $turquesa;
+        padding: 1rem 3rem;
+        border-radius: 3rem;
+        font-weight: $bold;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+}
+.areas_doctores,
+.areas_atencion{
+    h3{
+        text-align: left;
+        font-weight: $bold;
+    }
+    h1{
+        font-weight: $bold;
+    }
+}
+.areas_doctores{
+    h3{
+        margin-top: 7rem;
+    }
+}

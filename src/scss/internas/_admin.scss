@@ -1,0 +1,61 @@
+.secc_actualizar_noti{
+    h1{
+        font-weight: 700;
+    }
+}
+.grid--contenedor{
+    display: grid;
+gap: 1rem;
+    grid-template-columns: repeat(5,20%);
+overflow-wrap: break-word;
+word-wrap: break-word;
+}
+.alerta{
+
+    padding: .5rem;
+    text-align: center;
+    color: $blanco;
+    font-weight: $bold;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    border-radius: 5rem;
+    &.error{
+        background-color: $rojo;
+    }
+    &.exito{
+        background-color: $verde;
+    }
+}
+
+table.propiedades{
+    margin-top:4rem;
+    width:100%;
+    border-spacing:0;
+
+    thead{
+        background-color: $verde;
+
+        th{
+            color: $blanco;
+            padding: 2rem;
+        }
+    }
+
+    .imagen-tabla{
+        width: 10rem;
+    }
+}
+
+.imagen-small{
+    width: 10rem;
+}
+
+.seccion_index_admi,
+.seccion_noti_admi,
+.seccion_hist_admi
+{
+    h1{
+        font-weight: 400;
+        
+    }
+}
